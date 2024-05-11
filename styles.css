@@ -1,0 +1,253 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 1700px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+section, div {
+    /*border: 1px solid red;  Red border with 2px width */
+}
+
+h1 {
+    font-size: 52px;
+    color: #f1ffe6;
+}
+
+h2 {
+    font-size: 48px;
+    color: #f1ffe6;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 32px;
+    color: #ede1c7;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #332a40;
+    color: #f1ffe6;;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #f1ffe6;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Main Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #332a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/food_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white for better contrast */
+}
+
+#home p {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding: 25px 0px 25px 0px;
+    color: #f1ffe6;
+}
+
+#rec {
+    background-color: #4f5175;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/rec_bg.jpg");
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 100vh;
+
+}
+
+#rec div img {
+    height: 500px;
+}
+
+.pizza{
+    display: flex;
+    text-align: left;
+    border: 1px solid #f1ffe6;
+}
+
+.pizza:hover{
+    background-color: rgb(154, 145, 201, 0.2);
+    
+    transition: background-color 0.5s ease;
+}
+
+.pizza_text p {
+    font-size: 20px;
+    color: #ede1c7;
+    margin: 10px;
+}
+
+#rec_text {
+    font-size: 26px;
+    color: #f1ffe6;
+    margin: 10px;
+    background-color: rgb(42, 38, 64, 0.3);
+}
+
+#search {
+    background-color: #4f5175;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/search_bg.jpg");
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#search p {
+    font-size: 26px;
+    color: #f1ffe6;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    width: 550px; /* Set width of the input field */
+    padding: 10px; /* Add padding inside the input field */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Apply border radius for rounded corners */
+    background-color: rgba(255, 255, 255, 0.4); /* Transparent white background */
+    color: #422517; /* Text color */
+    font-size: 18px; /* Set font size */
+    outline: none; /* Remove outline on focus */
+    margin-top: 40px;
+}
+
+input[type="text"]::placeholder {
+    color: #2e2823; /* Placeholder text color */
+}
+
+#acc {
+    background-image: linear-gradient(rgba(59, 36, 2, 0.3), rgba(59, 36, 2, 0.3)), url("./img/contact_bg.jpg");
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#acc p {
+    font-size: 26px;
+    color: #f1ffe6;
+}
+
+.feedback-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 800px; /* Set maximum width for the container */
+    padding: 20px;
+    margin: 50px 0px;
+    background-color: rgba(138, 106, 80, 0.3); /* Transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border: 1px solid #e6d0a3;
+}
+
+.feedback-container input[type="text"] {
+    width: 600px; 
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.submit-button {
+    float: left; /* Align button to the right */
+    display: flex;
+    align-items: center;
+    max-height: 40px;
+    background-color: #634936; /* Button background color */
+    color: #e6d0a3; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.another-button {
+    display: block; /* Display button as block */
+    width: 600px; /* Full width for button */
+    background-color: #634936;
+    color: #e6d0a3;
+    padding: 10px 0;
+    border: 1px solid #e6d0a3;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.submit-button:hover,
+.another-button:hover {
+    background-color: #382b1e; /* Change background color on hover */
+}
